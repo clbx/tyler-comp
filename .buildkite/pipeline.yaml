@@ -1,4 +1,7 @@
 steps:
-  - label: "Test"
-    commands:
-    - echo "test"
+  - label: "init"
+    command:
+    - "echo test"
+  # Build Build Image
+  # Run Build Image
+  # Push exported modpack to accessible directory

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 downloads=$(cat modlist.yaml | yq e '.mods[].id')
 stellaris_id=$(cat modlist.yaml | yq e '.stellaris')
 
@@ -17,6 +19,7 @@ eval $download_command
 rev_downloads=$(echo $downloads|tr ' ' '\n'|tac|tr '\n' ' ')
 echo $rev_downloads
 mkdir -p /output
+
 
 for id in $rev_downloads
 do

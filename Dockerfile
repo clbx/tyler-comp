@@ -4,5 +4,5 @@ RUN wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
     chmod +x /usr/bin/yq
 COPY . .
 RUN chmod +x buildpack.sh
-#ENTRYPOINT [ "./buildpack.sh" ]
+ENTRYPOINT [ "./buildpack.sh" ]
 #CMD [ "./buildpack.sh" ]
